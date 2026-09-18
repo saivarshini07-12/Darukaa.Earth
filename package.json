@@ -1,0 +1,16 @@
+{
+  "name": "darukaa-earth",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "lint:backend": "python -m compileall backend",
+    "lint:frontend": "cd frontend && npm run build",
+    "test:backend": "pytest backend/tests -q",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^9.1.4",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.4.2"
+  }
+}
